@@ -1,0 +1,48 @@
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col">
+            <p style="float:right;">
+                <span>Hola {{persona}}</span>
+                <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión<i class="fas
+                fa-sign-out-alt"></i></a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7" style="margin-top:-9px ;">
+            <h2>LISTADO DE PRECIOS</h2>
+        </div>
+        <div class="col-5 text-end">
+            <a href="/admin/precios/agregar" class="btn btn-success"><i class="fas fa-plus"></i>Nuevo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulos</th>
+                        <th scope="col">Precios</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each precios}}
+                    <tr>
+                        <th scpoe="row">{{id}}</th>
+                        <td>{{nombre}}</td>
+                        <td>{{precio}}</td>
+                        <td>{{descripcion}}</td>
+                        <td class="text-end">
+                            <a href="/admin/precios/modificar/{{id}}" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/precios/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

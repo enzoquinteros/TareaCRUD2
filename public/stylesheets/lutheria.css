@@ -1,0 +1,94 @@
+h1,h2, h5{
+    color:white;
+    font-family: 'Times New Roman', Times, serif cursive;
+    font-weight: bold;
+    -webkit-text-stroke: 2px black;
+}
+
+.hero{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 0.5vh;
+    min-height: 680px;
+    color: white;
+}
+
+footer{
+    background-color: #aaa;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.lista-instrumentos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-instrumentos li {
+    margin: 4px 0;
+}
+
+.lista-instrumentos li a {
+    color: black;
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-instrumentos li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-instrumentos li a img{
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-instrumentos li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.testimonios{
+    background-color: rgb(139, 90, 0);
+    padding-bottom: 4rem !important;
+}
+
+.testimonio{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section{
+    scroll-margin-top: 60px;
+}
+
+.sesion{
+    color: black;
+    border: 11px groove #000000;
+    background-color: white;
+    width: 250px;
+}

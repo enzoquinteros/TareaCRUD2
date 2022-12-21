@@ -1,0 +1,31 @@
+<div class="container-fluid hero scroll_section">
+    <div class="row">
+        <div class="col-7" style="margin-top:100px ;">
+            <h2>LISTADO DE PRECIOS</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table" style="background:white;">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulos</th>
+                        <th scope="col">Precios</th>
+                        <th scope="col">Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each precios}}
+                    <tr>
+                        <th scpoe="row">{{id}}</th>
+                        <td>{{nombre}}</td>
+                        <td>{{precio}}</td>
+                        <td>{{descripcion}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
